@@ -1,0 +1,70 @@
+Big basket application(mern stack application)
+_________________________________________________
+
+client: React + Bootstap
+server: Express + mongoDB + Node
+
+
+client Configuration:
+______________________
+src --> app
+          -->root
+                -->components
+                           -->navabar
+                           -->home
+          -->products
+                -->components
+                           -->product-list
+                           -->product-admin
+                           -->create-product
+                           -->update-product
+
+
+server Configuration:
+______________________
+module : express , cors , mongoose , dotenv , express-validator
+
+npm install express cors mongoose dotenv express-validator
+
+router: productRouter
+
+
+REST-API:
+_________
+1.@usage  : get all product
+@url    :http://127.0.0.1:5000/api/products
+@fields :no-fields
+@method :get
+@access :public
+
+2.@usage  : get a product
+@url    :http://127.0.0.1:5000/api/products/:product_id
+@fields :no-fields
+@method :get
+@access :public
+
+3.@usage  : create a product
+@url    :http://127.0.0.1:5000/api/products
+@fields :name,img,price,qty,info
+@method :post
+@access :public
+
+4.@usage  : update a product
+@url    :http://127.0.0.1:5000/api/products/:product_id
+@fields :name,img,price,qty,info
+@method :put
+@access :public
+
+5.@usage  : update a product
+@url    :http://127.0.0.1:5000/api/products/:product_id
+@fields :no-fields
+@method :delete
+@access :public
+
+
+
+mongoDB-Configuration:
+______________________
+database : Bigbasket-application
+collection : products
+products : name , age ,price , qty ,info , created

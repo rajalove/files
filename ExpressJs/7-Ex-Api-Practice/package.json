@@ -1,0 +1,18 @@
+{
+  "name": "1-ex-basic-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "start": "nodemon Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^20.2.0",
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  }
+}
